@@ -18,6 +18,7 @@ $("#buttonStart").on("click", function(){
 
 $("#buttonDone").on("click", function(){
   done();
+  clearInterval(intervalId);
 
 })
 

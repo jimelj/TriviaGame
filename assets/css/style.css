@@ -31,3 +31,7 @@ background-size: cover;}
 body {
   background-color: #FFFFCC;
 }
+
+.panel-heading{
+  /*background-color: #fbc441 !important;*/
+}
