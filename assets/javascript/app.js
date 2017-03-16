@@ -1,14 +1,18 @@
 var timer;
 var intervalId;
+var wrongAnswers = 0;
+var correctAnswers = 0;
+var unAnswered = 0;
 
 
 
 $(".mainBody").hide();
+$(".answers").hide();
 
 $("#buttonStart").on("click", function(){
     $(".splash").hide();
     $(".mainBody").show();
-    timer = 5;
+    timer = 150;
     intervalId = setInterval(myTimer, 1000);
 } )
 
@@ -35,9 +39,9 @@ function myTimer() {
 function done() {
   console.log("here here");
   $(".mainBody").hide();
-
+  $(".answers").show();
 }
 
-function validation() {
-  
-}
+// function validation() {
+//   if ()
+// }

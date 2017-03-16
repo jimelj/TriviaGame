@@ -20,3 +20,9 @@ background-size: cover;}
 .splashHeading {
   margin-top: 200px;
 }
+
+.ansText {
+  margin-top: 50px;
+  background-color: #FFFFCC;
+  border-radius: 10px;
+}
