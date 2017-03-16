@@ -16,7 +16,10 @@ $("#buttonStart").on("click", function(){
     intervalId = setInterval(myTimer, 1000);
 } )
 
+$("#buttonDone").on("click", function(){
+  done();
 
+})
 
 
 
@@ -36,12 +39,47 @@ function myTimer() {
 
 }
 
+function validation(Boolean) {
+  if (Boolean)
+  {
+    correctAnswers++;
+    console.log("correct",correctAnswers);
+    console.log("INSIDE validation");
+
+  }else if ($('[type="radio"]').is(":not(':checked')")) {
+      unAnswered++
+      console.log("unAnswered", unAnswered);
+      console.log("inside not", unAnswered);
+  }
+
+
+  else{
+    wrongAnswers++
+    console.log("wrong",wrongAnswers);
+  }
+
+
+}
+
 function done() {
   console.log("here here");
   $(".mainBody").hide();
   $(".answers").show();
+  validation($('[value="10000"]').is(':checked'));
+  validation($('[value="1966"]').is(':checked'));
+  validation($('[value="elanor rigby"]').is(':checked'));
+  validation($('[value="the end"]').is(':checked'));
+  validation($('[value="king lear"]').is(':checked'));
+  validation($('[value="allan williams"]').is(':checked'));
+  validation($('[value="paul mccartney"]').is(':checked'));
+
+$(".correct").html("Correct Answers: "+correctAnswers);
+$(".wrong").html("Wrong Answers: "+wrongAnswers);
+$(".un").html("Unanswered: "+unAnswered);
+
+
 }
 
-// function validation() {
-//   if ()
-// }
+
+
+console.log("test", $('[type="radio"]').is(':checked'));
