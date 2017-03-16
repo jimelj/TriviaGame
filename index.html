@@ -10,14 +10,46 @@
 
 <body>
 
-    <div class="jumbotron text-center">
+    <!-- Splash---------------------------------------------------->
+
+      <div class="container splash">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+
+            <div id="imgSplah" class="jumbotron ">
+
+
+<div class="splashHeading">
+  <h2>TRIVIA MANIA!</h2>
+  <button id="buttonStart" type="button" class="btn btn-primary btn-lg">Start!</button>
+</div>
+</div>
+
+            <!-- <div class="image"><img src="assets/images/splash.jpg" class="img-responsive"alt=""></div> -->
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    <!-- Main body -------------------------------------------->
+    <div class="jumbotron text-center mainBody">
         <div class="container">
             <h1 class="bea">Trivia Mania!</h1>
             <h3 class="bea"> The Beatles edition<h3>
+
+
     </div>
   </div>
 
-      <div class="container">
+      <div class="container mainBody">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center">
             <div class="panel panel-default">
@@ -25,7 +57,7 @@
                 <h3 class="panel-title text-left">Timer:</h3>
               </div>
               <div class="panel-body">
-              <h4>120 seconds</h4>
+              <h4 id="timer">120 seconds</h4>
               </div>
 
             </div>
@@ -212,7 +244,7 @@
     </div>
     <div class="row">
       <div class="col-md-4 col-md-offset-4">
-        <button type="button" class="btn btn-primary btn-lg btn-block">DONE!</button>
+        <button id="buttonDone" type="button" class="btn btn-primary btn-lg btn-block">DONE!</button>
       </div>
     </div>
     </div>

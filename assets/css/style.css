@@ -10,3 +10,13 @@
 .container {
   margin-bottom: 50px;
 }
+
+.jumbotron{
+height: 400px;
+width: auto;
+background-image: url("../images/splash.jpg");
+background-size: cover;}
+
+.splashHeading {
+  margin-top: 200px;
+}
